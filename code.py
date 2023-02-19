@@ -10,6 +10,8 @@ b = []
 
 while True:
     b = scan.scan()
-    print(comm.passkey(b, keymap, 0))
+    #c = comm.passkey(b, keymap, 0)
     print(b)
+    #print(c)
+    #comm.release(c, b)
     time.sleep(0.0167)
