@@ -15,8 +15,9 @@ while True:
     pt = time.monotonic()
     b = scan.scan()
     c = comm.passkey(b, keymap, 0)
-    comm.release(c, b)
+    comm.release(c, b, keymap, 0)
     ct = time.monotonic()
+    print(c, b)
     if debug >= 1:
         print(ct - pt)
     time.sleep(0.0167)
