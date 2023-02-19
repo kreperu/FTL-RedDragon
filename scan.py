@@ -20,7 +20,7 @@ def scan():
         i.value = False
         for n in rList:
             if not n.value:
-                buffer.append([i, n])
+                buffer.append([cList.index(i), rList.index(n)])
         i.value = True
 
     for i in cList:
@@ -34,7 +34,7 @@ def scan():
         i.value = False
         for n in cList:
             if not n.value:
-                buffer.append([i, n])
+                buffer.append([cList.index(n), rList.index(i)])
         i.value = True
 
     for q in buffer:
